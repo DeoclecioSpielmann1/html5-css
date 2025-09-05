@@ -4,46 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube de Futebol - Notícias e Times</title>
+    
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
-    <header>
-        <h1>Clube de Futebol</h1>
+    <a href="#main-content" class="skip-to-content-link">Pular para o Conteúdo</a>
+
+    <header class="main-header">
+        <div class="logo">
+            <img src="https://via.placeholder.com/80" alt="Logo do Clube de Futebol">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#latest-news">Notícias</a></li>
+                <li><a href="#featured-teams">Times</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#noticias">Notícias</a></li>
-            <li><a href="#times">Times</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
-
-    <main class="main-content">
-        <div class="left-column">
-            <section>
+    <main id="main-content">
+        <div class="main-content-wrapper">
+            <article class="latest-news" id="latest-news">
                 <h2>Últimas Notícias</h2>
-                <p>Detalhes sobre um jogo recente ou contratação de jogador.</p>
-            </section>
-        
-            <article>
-                <h3>Título do Artigo</h3>
-                <p>Conteúdo detalhado sobre um evento ou novidade do clube.</p>
+                <article>
+                    <h3>Vitória Inesquecível no Clássico!</h3>
+                    <p>Em uma partida emocionante, o nosso time principal demonstrou garra e técnica, superando o adversário por 3 a 1. O destaque da partida foi o atacante artilheiro, que marcou dois gols.</p>
+                </article>
+                <article>
+                    <h3>Novo Jogador Anunciado</h3>
+                    <p>O clube anuncia a contratação de um jovem talento para reforçar o meio-campo. O jogador se juntará à equipe na próxima semana para iniciar os treinamentos.</p>
+                </article>
             </article>
-        </div>
 
-        <aside>
-            <h2>Artigos Relacionados</h2>
-            <ul>
-                <li><a href="#">Entrevista exclusiva com o técnico</a></li>
-                <li><a href="#">História dos títulos mais importantes</a></li>
-                <li><a href="#">Próximos jogos e calendário</a></li>
-            </ul>
-        </aside>
+            <aside>
+                <h2>Artigos Relacionados</h2>
+                <ul>
+                    <li><a href="#">Entrevista exclusiva com o técnico</a></li>
+                    <li><a href="#">História dos títulos mais importantes</a></li>
+                    <li><a href="#">Próximos jogos e calendário</a></li>
+                </ul>
+            </aside>
+        </div>
+        
+        <section class="featured-teams" id="featured-teams">
+            <h2>Times em Destaque</h2>
+            <article>
+                <h3>Time Principal</h3>
+                <p>Conheça os jogadores que compõem o nosso time principal na temporada. Acompanhe a trajetória e as estatísticas dos atletas.</p>
+            </article>
+            <article>
+                <h3>Categorias de Base</h3>
+                <p>O futuro do clube está aqui. Veja os times sub-17 e sub-20 que se preparam para os próximos campeonatos e promovem novos talentos.</p>
+            </article>
+        </section>
     </main>
 
-    <footer>
+    <footer class="site-footer" id="contact">
         <p>& 2025 Deoclécio Spielmann. Todos os direitos reservados.</p>
     </footer>
 
